@@ -175,7 +175,7 @@ body{
 
 #pageHead .logo{
 	margin-top: 10px;
-	margin-left: 10px; 
+	margin-left: 10px;
 }
 
 /* ここからページごとのCSSを書く */
@@ -184,4 +184,84 @@ body{
 	border-top: 1px solid #1E90FF;
 	padding: 10px;
 	margin-top: 15px;
+}
+
+/* 幅を960pxに */
+#pageBody{
+  max-width: 960px;
+}
+
+#pageBody h1{
+  margin-top: 30px;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  border-left: solid 0.75rem #1E90FF;
+}
+
+#pageBody h2{
+  font-size: 20px;
+}
+
+/* ページ内リンク */
+#link{
+  	border-top: 1px solid #1E90FF;
+    border-bottom: 1px solid #1E90FF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#link a{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+
+/* 全てのリンク */
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  color: #666666;
+}
+
+/* newページリンク */
+.more{
+  text-align: right;
+  font-size: 20px;
+}
+
+/* aboutNagao */
+#pageBody #aboutNagao{
+  display: flex;
+  padding-bottom: 50px;
+}
+
+#pageBody #aboutNagao img{
+  flex: 1;
+  max-width: 120px;
+  margin-right: 500px;
+}
+
+/* 執筆著書 */
+#pageBody .books{
+    padding-top: 30px;
+}
+
+#pageBody .book_display{
+  display: flex;
+}
+
+#pageBody .book_display img{
+  flex: 1;
+  max-height: 180px;
+  max-width: 130px;
+  margin-right: 20px;
+}
+
+#pageBody .book_display .text{
+  flex: 4;
+  padding-top: 20px;
 }
