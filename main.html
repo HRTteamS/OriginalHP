@@ -3,158 +3,70 @@
 <head>
 	<meta charset="utf-8">
 	<title>横浜国大・長尾研究室</title>
-	<link rel="stylesheet" type="text/css" href="common/slick/slick.css">
-	<link rel="stylesheet" type="text/css" href="common/slick/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="common/css/main.css">
 </head>
 
 <body>
 	<header id="pageHead">
-		<!--
-			ヘッダー部分
-			ここに研究室ロゴ（ページ左上）とナビゲーションバーが記載される
-		-->
-
 		<!-- ロゴをクリックするとホームに飛ぶ -->
 		<a href="main.html"><img class="logo" src="images/home/sign.png" width="62" height="74"></a>
+		<!-- ハンバーガーメニュー -->
+	    <nav class="menu">
+			<input id="menu--toggle" type="checkbox" />
+			<!-- /#menu--toggle --><!-- トグルとは、jQueryである同じ操作を繰り返すことで、機能や状態のON/OFFを切り替える仕組みのこと -->
+			<label class="menu--toggle__trigger" for="menu--toggle"></label>
+			<!-- /.menu--toggle__trigger -->
+			<label class="menu--toggle__burger" for="menu--toggle"></label>
+			<!-- /.menu--toggle__burger -->
 
-		<!-- 以下グローバルナビ -->
-		<nav class="globalNavi">
-			<ul>
-				<li class="current"><a href="main.html">ホーム</a></li>
-				<li><a href="member/index.html">メンバー</a></li>
-				<li><a href="aboutNagao/index.html">長尾教授について</a></li>
-				<li><a href="aboutLabo/index.html">長尾研について</a></li>
-				<li><a href="assign/index.html">配属希望者の方へ</a></li>
-				<li><a href="joint/index.html">共同研究関連</a></li>
-				<li><a href="QandA/index.html">Q＆A</a></li>
-			</ul>
-		</nav>
-
+			<ul class="menu__body">
+			<li class="menu__body-element slide1">
+				<a class="menu__body-link" href="main.html">ホーム</a>
+			<!-- /.menu__body-link -->
+			</li>
+			<!-- /.menu__body-element -->
+			<li class="menu__body-element slide2">
+				<a class="menu__body-link" href="news/index.html">ニュース</a>
+			<!-- /.menu__body-link -->
+			</li>
+			<!-- /.menu__body-element -->
+			<li class="menu__body-element slide3">
+				<a class="menu__body-link" href="member/index.html">メンバー</a>
+			<!-- /.menu__body-link -->
+			</li>
+			<!-- /.menu__body-element -->
+			<li class="menu__body-element slide4">
+				<a class="menu__body-link" href="aboutNagao/index.html">長尾教授について</a>
+				<!-- /.menu__body-link -->
+			</li>
+			<li class="menu__body-element slide5">
+				<a class="menu__body-link" href="aboutLabo/index.html">長尾研究室について</a>
+				<!-- /.menu__body-link -->
+			</li>
+			<li class="menu__body-element slide6">
+				<a class="menu__body-link" href="assign/index.html">配属希望の方へ</a>
+				<!-- /.menu__body-link -->
+			</li>
+			<li class="menu__body-element slide7">
+				<a class="menu__body-link" href="joint/index.html">共同研究関連</a>
+				<!-- /.menu__body-link -->
+			</li>
+			<li class="menu__body-element slide8">
+				<a class="menu__body-link" href="QandA/index.html">Q＆A</a>
+				<!-- /.menu__body-link -->
+			</li>
+		<!-- /.menu__body-element -->
+		</ul>
+		<!-- /.menu__body -->
+	    </nav>
 	</header>
 
 	<div id="pageBody">
-		<div id="pageBodyTop">
-			<!-- <div class="slider">
-				<ul class="single-item">
-					<li>
-						<a><img src="images/slideshow/entrance1.jpg" width="780" height="400"></a>
-					</li>
-					<li>
-						<a><img src="images/slideshow/entrance2.jpg" width="780" height="400"></a>
-					</li>
-					<li>
-						<a><img src="images/slideshow/entrance1.jpg" width="780" height="400"></a>
-					</li>
-					<li>
-						<a><img src="images/slideshow/entrance2.jpg" width="780" height="400"></a>
-					</li>
-				</ul>
-
-				<div id="arrows">
-					<div class="slick-next">
-						<img src="images/slideshow/slide_next.png" alt="→">
-					</div>
-					<div class="slick-prev">
-						<img src="images/slideshow/slide_prev.png" alt="←">
-					</div>
-				</div>
-			</div> -->
-		</div>
-
-		<div id="pageBodyMain">
-		<!--
-			２段組みレイアウトのメインページ部分
-			ここにwhat's new と アクセスが記載される
-		-->
-		<section class="news">
-			<p style="font-size:20px; font-weight: bold; color: #FF3838;">What's new</p>
-			<ul>
-				<li>
-				<time datetime="2018-08-06">2018-08-06　オープンキャンパスに参加しました</time>
-				8月4日(土)～5日(日)に開催された横浜国立大学オープンキャンパスにおきまして， 情報工学EPの研究室見学で長尾研の見学会を開催いたしました． 両日とも多数の方々にご参加賜りましてまことにありがとうございました．
-				</li>
-				<li>
-				<time datetime="2018-06-08">2018-06-08　長尾研OGの春日さんが情報処理学会「大会奨励賞」を受賞しました</time>
-				5個下の項目で，2018年3月の情報処理学会第80回全国大会（早稲田大学 西早稲田キャンパス）で何人かの学生が 学生奨励賞を受賞したことをお知らせしましたが，その中からさらに春日悠さんの発表がこの度「大会奨励賞」を受賞しました． 詳細はこちらです．
-				</li>
-				<li>
-				<time datetime="2018-04-27">2018-04-27　 5月1日～9月30日は夏の軽装期間です</time>
-				この期間は本学の教職員はノーネクタイ・ノー上着の軽装にて執務を行います． 本学にご来学される方におかれましても，ノーネクタイ・ノー上着のお気軽な軽装でお越し頂ければ幸いです． どうぞよろしくお願い致します．
-				</li>
-				<li>
-				<time datetime="2018-03-30">2018-03-30　 学生の研究発表に対する受賞について</time>
-				D3の荒井氏が情報処理学会第116回数理モデル化と問題解決(MPS)研究会で発表した「深層零平均正規化相互相関ネットワーク」が同会のMPSベストプレゼンテーション賞を受賞しました．
-				</li>
-				<li>
-				<time datetime="2018-03-30">2018-03-30　平成30年度春学期のメンバーについて</time>
-				卒研配属が決まり，平成30年度春学期の長尾研のメンバーが決まりました． 詳しくは研究室のメンバーをご覧下さい．
-				</li>
-				<li>
-				<time datetime="2018-03-16">2018-03-16　電子情報通信学会総合大会で学部４年生が学生ポスターセッションに参加</time>
-				3月20日～23日に東京電機大学で開催される2018年電子情報通信学会総合大会（こちら）で開催される ISS特別企画の「学生ポスターセッション」（こちら）において，長尾研究室の学部４年生が次のポスター発表を行います．
-					<ul>
-						<li>阪野優太：線形遺伝子型を導入したグラフ構造GP（2018年3月21日）</li>
-						<li>高石一樹：浸透学習法を用いた時系列データの将来変動予測（2018年3月21日）</li>
-						<li>佐保田和宏：浸透学習法を用いたマルチモーダル感情推定（2018年3月21日）</li>
-						<li>宗藤大貴：将棋における直観的指し手のための特徴のクラスタリング（2018年3月21日）</li>
-						<li>五十嵐大地：浸透学習法を用いたLocalizer実験におけるEEGからの視認物体の推定（2018年3月21日）</li>
-					</ul>
-				</li>
-			</ul>
-		</section>
-
-		<section class="access">
-			<pre>
-
-				ここにアクセス関連かくよ。
-
-			</pre>
-		</section>
-
-		</div>
-
-		<div id="pageBodyRight">
-			<!--
-				２段組みレイアウトの右側部分
-				ここに関連ページに飛べるバナーを設置する
-				以下バナー
-			-->
-			<div class="banner">
-				<ul>
-					<li>
-						<a href=""><img src="images/banner/ynu.png" width="190" height="40"></a>
-					</li>
-					<li>
-						<a href=""><img src="images/banner/ynu_s.png" width="190" height="40"></a>
-					</li>
-					<li>
-						<a href=""><img src="images/banner/ynu_graduate.png" width="190" height="40"></a>
-					</li>
-					<li>
-						<a href=""><img src="images/banner/ynu_i.png" width="190" height="40"></a>
-					</li>
-					<li>
-						<a href=""><img src="images/banner/ynu_ai.png" width="190" height="40"></a>
-					</li>
-					<li>
-						<a href=""><img src="images/banner/ynu_n.png" width="190" height="40"></a>
-					</li>
-					<li>
-						<a href=""><img src="images/banner/mi.png" width="190" height="40"></a>
-					</li>
-				</ul>
-			</div>
-		</div>
+		<p>ここはホームです</p>
 	</div>
 
-
 	<footer id="pageFoot">
-		佐保田・伊藤・水山でお送りいたします。
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script type="text/javascript" src="common/slick/slick.min.js"></script>
-	<script type="text/javascript" src="common/js/main.js"></script>
 </body>
 </html>
