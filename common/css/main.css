@@ -1,5 +1,4 @@
 body{
-	background-image: url(../../images/home/back2.jpg);
 }
 
 *,
@@ -19,7 +18,7 @@ body{
 .menu--toggle__burger,
 .menu--toggle__burger:before,
 .menu--toggle__burger:after {
-  position: absolute;
+  position: fixed;
   top: 1.6em;
   right: 1.6em;
   width: 2em;
@@ -37,24 +36,26 @@ body{
 }
 
 .menu--toggle__burger:before {
+  position: absolute;
   content: "";
   top: 10px;
   right: 0;
 }
 .menu--toggle__burger:after {
+  position: absolute;
   content: "";
   top: 20px;
   left: 0;
 }
 
 .menu__body {
-  position: absolute;
+  position: fixed;
   width: 0;
   height: 0;
   margin: 0 auto;
   padding: 0;
   right: 0;
-  background-color: #333333;
+  background-color: rgba(102, 102, 102, 0.5);
   box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.5);
   z-index: 20;
   animation: checkboxUncheckedAnimation 0.35s both;
@@ -143,18 +144,19 @@ body{
 
 @keyframes checkboxCheckedAnimation {
   80% {
-    width: 100vw;
+    /*右から出てきた時の背景の大きさを指定*/
+    width: 23vw;
     height: 100vh;
   }
   100% {
-    width: 100vw;
+    width: 23vw;
     height: 100vh;
   }
 }
 
 @keyframes checkboxUncheckedAnimation {
   0% {
-    width: 100vw;
+    width: 23vw;
     height: 100vh;
   }
 }
@@ -175,14 +177,62 @@ body{
 }
 
 #pageHead .logo{
+  position: fixed;/*最終的にすべてのところに追加可能性あり*/
 	margin-top: 10px;
 	margin-left: 10px; 
 }
 
 /* ここからページごとのCSSを書く */
 
+/*縦スライドのページごとの設定*/
+.section {
+  background-image: url(../../images/home/back2.jpg);
+  width: 100%;
+}
+
+.section-content {
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 60px;
+  text-align: center;
+}
+
+
+
 #pageFoot{
 	border-top: 1px solid #1E90FF;
 	padding: 10px;
 	margin-top: 15px;
+}
+
+
+
+
+
+
+
+.main {
+  position: relative;
+}
+.pager {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 0;
+}
+.pager li {
+  display: block;
+  margin: 20px;
+}
+.pager li a {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.pager .is-current a{
+  background: #4169e1;
 }
