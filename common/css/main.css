@@ -223,7 +223,7 @@ body{
   top: 10vh;
   left: 2vw;
   width: 40vw;
-  height: 80vh;
+  height: 70vh;
   border: 1px solid  #4169e1;
 }
 
@@ -244,6 +244,8 @@ body{
 
 .section-content .access .access-detail{
   font-size: 1.2vw;
+  height: 73vh;
+  overflow: hidden;
 }
 
 .section-content .about-nagao{
@@ -267,8 +269,9 @@ body{
   top: 5vh;
   left: 10vw;
   width: 50vw;
-  height: 60vh;
+  height: 70vh;
   font-size: 1.2vw;
+  overflow: hidden;
   /*border: 1px solid  #4169e1;*/
 }
 
