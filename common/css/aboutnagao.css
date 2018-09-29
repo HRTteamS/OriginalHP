@@ -231,23 +231,31 @@ a:hover{
 .more{
   text-align: right;
   font-size: 20px;
+  padding-top: 30px;
+  
 }
 
 /* aboutNagao */
 #pageBody #aboutNagao{
   display: flex;
   padding-bottom: 50px;
+  font-size: 20px;
 }
 
 #pageBody #aboutNagao img{
   flex: 1;
-  max-width: 120px;
-  margin-right: 500px;
+  width: auto;
+  height: 10rem;
+  margin-right: 300px;
 }
 
 /* 執筆著書 */
 #pageBody .books{
     padding-top: 30px;
+}
+
+#pageBody .books h2{
+  font-size: 24px;
 }
 
 #pageBody .book_display{
@@ -264,4 +272,47 @@ a:hover{
 #pageBody .book_display .text{
   flex: 4;
   padding-top: 20px;
+}
+
+/*  講義 */
+#nagaoLecture,#nagaoBook,#nagaoSeminar{
+  padding-top: 50px;
+}
+
+#nagaoLecture .lecture{
+  padding-top:50px;
+}
+
+#nagaoLecture h2{
+  font-size: 24px;
+  text-decoration: underline #1E90FF;
+}
+
+#nagaoLecture .aboutlec{
+  font-size: 20px;
+  text-align: right;
+}
+
+/* セミナー */
+
+#nagaoSeminar .seminar{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #1E90FF;
+}
+
+#nagaoSeminar .semlast{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: none;
+}
+
+#nagaoSeminar h2{
+  font-size: 24px;
+}
+
+#nagaoSeminar .seminar ul{
+  padding-left: 50px;
+  padding-top: 20px;
+  font-size: 20px;
 }
