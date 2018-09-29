@@ -181,6 +181,22 @@ body{
 
 /* ここからページごとのCSSを書く */
 
+table td{/* それぞれのセルの大きさ設定 */
+	width: 96px;
+	height: 128px;
+	text-align: center;
+}
+
+table th{/* それぞれのセルの大きさ設定 */
+	height: 40px
+	font-weight: 700;
+	text-align: center;
+}
+
+.info{
+	text-align: center;
+}
+
 #pageFoot{
 	border-top: 1px solid #1E90FF;
 	padding: 10px;
