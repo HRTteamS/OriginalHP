@@ -179,16 +179,15 @@ body{
 #pageHead .logo{
   position: fixed;/*最終的にすべてのところに追加可能性あり*/
 	margin-top: 10px;
-	margin-left: 10px; 
+	margin-left: 10px;
 }
 
 /* ここからページごとのCSSを書く */
 
 /*縦スライドのページごとの設定*/
 .section {
-  background-image: url(../../images/home/back2.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-image: url(../../images/home/Hp_top.png);
+  background-size: cover;
   width: 100%;
 }
 
@@ -196,7 +195,6 @@ body{
   height: 100%;
   margin: 0 auto;
   padding: 40px 60px;
-  text-align: center;
 }
 
 .section-content .main-title{
@@ -205,16 +203,62 @@ body{
   width: 100vw;
   height: 100vh;
 }
-.section-content .main-title p{
-  font-size: 50px;
+
+.section-content .main-title .mainname{
+  margin-left: 5vw;
+  font-family: 'Lobster', cursive;
+  /*font-family: 'Play', sans-serif;*/
+  font-size: 200px;
+  color: #4169e1;
+}
+.section-content .main-title .subname{
+  margin-top: 30px;
+  margin-left: 5vw;
+  font-size: 30px;
+  /*font-family: 'Play', sans-serif;*/
 }
 
+.section-content .map{
+  position: relative;
+  top: 10vh;
+  width: 40vw;
+  height: 80vh;
+  border: 1px solid  #4169e1;
+}
+
+.section-content .access{
+  position: relative;
+  top: -80vh;
+  left: 45vw;
+}
+
+
+.section-content {
+  height: 100%;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+
+
+#content2{
+  background-color: rgb(255, 255, 255);
+}
+
+#content3{
+  background-color: rgb(240, 240, 240);
+}
+
+#content4{
+  background-color: rgb(255, 255, 255);
+}
 
 #pageFoot{
 	border-top: 1px solid #1E90FF;
 	padding: 10px;
 	margin-top: 15px;
 }
+
 
 .main {
   position: relative;
@@ -226,6 +270,7 @@ body{
   transform: translateY(-50%);
   padding: 0;
 }
+
 .pager li {
   display: block;
   margin: 20px;
@@ -234,8 +279,9 @@ body{
   display: block;
   width: 10px;
   height: 10px;
-  background: #fff;
+  background: #ffffff;
   border-radius: 50%;
+  border: 1px solid #aaaaaa;
 }
 
 .pager .is-current a{
