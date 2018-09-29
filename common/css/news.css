@@ -181,8 +181,358 @@ body{
 
 /* ここからページごとのCSSを書く */
 
-#pageFoot{
-	border-top: 1px solid #1E90FF;
-	padding: 10px;
-	margin-top: 15px;
+
+
+/* Body */
+
+#pageBody{
+
+	width: 90%;
+
+	margin: 0 auto;
+
 }
+
+
+
+/* ページタイトル */
+
+#pageBody .page-title .main{
+
+	text-align: center;
+
+	font-size: 70px;
+
+	color: #0174DF;
+
+}
+
+#pageBody .page-title .sub{
+
+	text-align: center;
+
+	font-size: 20px;
+
+	color: #000000;
+
+	margin-top: -10px;
+
+	margin-bottom: 10px;
+
+}
+
+#pageBody .page-title hr{
+
+	height: 3px;
+
+	background-color: #0174DF;
+
+	border: none;
+
+	color: #0174DF;
+
+	margin-right: 10%;
+
+	margin-left: 10%;
+
+}
+
+
+
+/* Footer */
+
+#pageFoot{
+
+	border-top: 1px solid #1E90FF;
+
+	padding: 10px;
+
+	margin-top: 15px;
+
+}
+
+
+
+/* ページ先頭に戻る */
+
+#pageBody .news .backHead {
+
+	float: right;
+
+
+
+}
+
+
+
+
+
+/* ラジオボタン */
+
+#pageBody .news {
+
+    margin: 2em 0;
+
+    padding: 0;
+
+	margin-left: 10%;
+
+	margin-right: 10%;
+
+}
+
+
+
+/* ボタン装飾 */
+
+#pageBody .news label {
+
+    padding: 15px;
+
+    font-weight: bold;
+
+    border: solid 1px #AAAAAA;
+
+    cursor :pointer;/*
+
+	background-color: #d1ff8c;*/
+
+	font-size: 18px;
+
+	letter-spacing: 2px;
+
+}
+
+/* ボタンホバー 時*/
+
+#pageBody .news label:hover {
+
+    background: #efefef;
+
+}
+
+/* チェック非表示 */
+
+#pageBody .news input {
+
+    display: none;
+
+}
+
+/* 中身非表示 */
+
+#pageBody .news .hidden_show1 {
+
+    height: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition: 0.8s;
+
+}
+
+#pageBody .news .hidden_show2 {
+
+    height: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    opacity: 0;
+
+    transition: 0.8s;
+
+}
+
+
+
+/* 選択時　中身表示 ボタンの色変更*/
+
+#pageBody .news input[value="2018"]:checked ~ .hidden_show1{
+
+    padding: 10px 0;
+
+    height: auto;
+
+    opacity: 1;
+
+}
+
+#pageBody .news input[value="2018"]:checked + label {
+
+    background-color: #399DE2;
+
+	color: #FFFFFF;
+
+}
+
+#pageBody .news input[value="2017"]:checked ~ .hidden_show2{
+
+    padding: 10px 0;
+
+    height: auto;
+
+    opacity: 1;
+
+}
+
+#pageBody .news input[value="2017"]:checked + label {
+
+    background-color: #399DE2;
+
+	color: #FFFFFF;
+
+}
+
+
+
+
+
+/* 2018ニュースリスト */
+
+#pageBody .news .hidden_show1 ul li{
+
+	list-style: none;
+
+	/*border-bottom: 1px solid #1E90FF;*/
+
+	padding-bottom: 10px;
+
+	margin-bottom: 10px;
+
+	margin-right: 0px;
+
+	margin-left: 0px;
+
+	font-size: 14px;
+
+	line-height: 1.5;
+
+}
+
+/* 2018ニュースタイトル */
+
+#pageBody .news .hidden_show1 ul li time{
+
+	font-weight: bold;
+
+	display: block;
+
+	font-size: 17px;
+
+	line-height: 1.429;
+
+	margin-bottom: 3px;
+
+}
+
+/* 2018入れ子リスト */
+
+#pageBody .news .hidden_show1 ul li ul li{
+
+	padding: 0;
+
+	margin-left: 30px;
+
+	margin-top: 0px;
+
+    margin-bottom: 0px;
+
+	/*margin: 0; */
+
+	list-style: none;
+
+	border-bottom:none;
+
+	font-size: 14px;
+
+	list-style-type: circle;
+
+}
+
+
+
+
+
+/* 2017ニュースリスト */
+
+#pageBody .news .hidden_show2 ul li{
+
+	list-style: none;
+
+	/*border-bottom: 1px solid #1E90FF;*/
+
+	padding-bottom: 10px;
+
+	margin-bottom: 10px;
+
+	margin-right: 0px;
+
+	margin-left: 0px;
+
+	font-size: 14px;
+
+	line-height: 1.5;
+
+}
+
+/* 2017ニュースタイトル */
+
+#pageBody .news .hidden_show2 ul li time{
+
+	font-weight: bold;
+
+	display: block;
+
+	font-size: 17px;
+
+	line-height: 1.429;
+
+	margin-bottom: 3px;
+
+}
+
+/* 2017入れ子リスト */
+
+#pageBody .news .hidden_show2 ul li ul li{
+
+	padding: 0;
+
+	margin-left: 30px;
+
+	margin-top: 0px;
+
+    margin-bottom: 0px;
+
+	/*margin: 0; */
+
+	list-style: none;
+
+	border-bottom:none;
+
+	font-size: 14px;
+
+	list-style-type: circle;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
