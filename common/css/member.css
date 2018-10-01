@@ -187,10 +187,15 @@ table td{/* それぞれのセルの大きさ設定 */
 	text-align: center;
 }
 
+.styleA{
+	background-color: #A9F5F2;
+}
+
 table th{/* それぞれのセルの大きさ設定 */
 	height: 40px
 	font-weight: 700;
 	text-align: center;
+	background-color: #A9F5F2;
 }
 
 .info{
