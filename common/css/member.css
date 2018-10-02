@@ -188,14 +188,14 @@ table td{/* それぞれのセルの大きさ設定 */
 }
 
 .styleA{
-	background-color: #A9F5F2;
+	background-color: #4169E1;
 }
 
 table th{/* それぞれのセルの大きさ設定 */
 	height: 40px
 	font-weight: 700;
 	text-align: center;
-	background-color: #A9F5F2;
+	background-color: #4169E1;
 }
 
 .info{
@@ -203,7 +203,7 @@ table th{/* それぞれのセルの大きさ設定 */
 }
 
 #pageFoot{
-	border-top: 1px solid #1E90FF;
+	border-top: 1px solid #4169E1;
 	padding: 10px;
 	margin-top: 15px;
 }

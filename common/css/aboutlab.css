@@ -180,6 +180,18 @@ body{
 
 /* ここからページごとのCSSを書く */
 
+#pageBody .info{
+	text-align: center;
+}
+
+ul{
+	padding-left: 30px;
+}
+
+.explain{
+	font-weight: 500;
+}
+
 #pageFoot{
 	border-top: 1px solid #1E90FF;
 	padding: 10px;
