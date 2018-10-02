@@ -145,18 +145,18 @@ body{
 @keyframes checkboxCheckedAnimation {
   80% {
     /*右から出てきた時の背景の大きさを指定*/
-    width: 23vw;
+    width: 27vw;
     height: 100vh;
   }
   100% {
-    width: 23vw;
+    width: 27vw;
     height: 100vh;
   }
 }
 
 @keyframes checkboxUncheckedAnimation {
   0% {
-    width: 23vw;
+    width: 27vw;
     height: 100vh;
   }
 }
