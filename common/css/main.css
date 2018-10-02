@@ -111,35 +111,35 @@ body{
 /*画面表示から0.5秒後に1秒かけながらアニメーションする指定。
 あと、forwardsでアニメーション終了後もプロパティが100%のときのものを保持するようにします。*/
 .slide1{
-  animation: RightToLeft 1.2s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide2{
-  animation: RightToLeft 1.5s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide3{
-  animation: RightToLeft 2.0s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide4{
-  animation: RightToLeft 2.5s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide5{
-  animation: RightToLeft 3.0s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide6{
-  animation: RightToLeft 3.5s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide7{
-  animation: RightToLeft 4.0s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 .slide8{
-  animation: RightToLeft 4.5s ease 0.0s forwards;
+  animation: RightToLeft 1.0s ease 0.0s forwards;
 }
 
 @keyframes checkboxCheckedAnimation {
@@ -165,9 +165,8 @@ body{
 @keyframes RightToLeft {
   0% {
     opacity: 0;/* 透明 */
-  }
-  10%{
-    transform: translateX(20%);/* X軸方向に50px */
+
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;/* 不透明 */
@@ -293,7 +292,39 @@ body{
   top: 10vh;
   width: 85vw;
   height: 80vh;
-  border: 1px solid  #4169e1;
+  /*border: 1px solid  #4169e1;*/
+}
+
+.section-content .about-lab .about-lab-img{
+  position: relative;
+  left: 2vw;
+  width: 40vw;
+  height: 70vh;
+  /*border: 1px solid  #4169e1;*/
+}
+
+.section-content .about-lab .about-lab-detail{
+  position: relative;
+  top: -70vh;
+  left: 45vw;
+  width: 40vw;
+  height: 80vh;
+  margin: 0;
+}
+
+.section-content .about-lab .about-lab-title{
+  position: relative;
+  color: #4169e1;
+  font-family: 'Lobster', cursive;
+  font-size: 5vw;
+}
+
+.section-content .about-lab .about-lab-detail-text{
+  position: relative;
+  top: 2vh;
+  font-size: 1.2vw;
+  height: 68vh;
+  overflow: hidden;
 }
 
 #content2{
