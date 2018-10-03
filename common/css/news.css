@@ -1,189 +1,376 @@
 body{
+
 }
+
+
+
 
 
 *,
+
 *:before,
+
 *:after {
+
   box-sizing: border-box;
+
   margin: 0 auto;
+
   padding: 0;
+
 }
+
+
 
 #menu--toggle[type="checkbox"]:not(:checked),
+
 #menu--toggle[type="checkbox"]:checked {
+
   display: none;
+
 }
+
+
 
 .menu--toggle__trigger,
+
 .menu--toggle__burger,
+
 .menu--toggle__burger:before,
+
 .menu--toggle__burger:after {
+
   position: absolute;
+
   top: 1.6em;
+
   right: 1.6em;
+
   width: 2em;
+
   height: 5px;
+
   background-color: #666666;
+
   border-radius: 2px;
+
   cursor: auto;
+
   z-index: 100;
+
   transition: 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
+
 }
+
+
 
 .menu--toggle__trigger {
+
   height: 2em;
+
   background: none;
+
 }
+
+
 
 .menu--toggle__burger:before {
+
   content: "";
+
   top: 10px;
+
   right: 0;
+
 }
+
 .menu--toggle__burger:after {
+
   content: "";
+
   top: 20px;
+
   left: 0;
+
 }
+
+
 
 .menu__body {
+
   position: absolute;
+
   width: 0;
+
   height: 0;
+
   margin: 0 auto;
+
   padding: 0;
+
   right: 0;
+
   background-color: #333333;
+
   box-shadow: 3px 3px 7px rgba(40, 40, 40, 0.5);
+
   z-index: 20;
+
   animation: checkboxUncheckedAnimation 0.35s both;
+
 }
+
+
 
 .menu__body-element, .menu__body-link{
+
   display: none;
+
   margin: 5em 3em -3em 0;
+
   font-weight: normal;
+
   color: #ffffff;
+
   text-align: right;
+
   text-decoration: none;
+
   text-transform: none;
+
   list-style: none;
+
   outline: 0;
+
 }
+
+
 
 .menu__body-element {
+
   text-indent: 2em;
+
 }
+
+
 
 .menu__body-link:hover {
+
   width: 100;
+
   cursor: pointer
+
   color: #ffffff;
+
   background-color: #555555;
+
 }
 
+
+
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger {
+
   top: 35px;
+
   transform: rotate(405deg);
+
   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
+
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:before {
+
   top: 0;
+
   transform: rotate(-90deg);
+
   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
+
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger:after {
+
   top: 0;
+
   transform: rotate(90deg);
+
   transition: transform 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
 }
+
 #menu--toggle:checked + .menu--toggle__trigger + .menu--toggle__burger + .menu__body {
+
   animation: checkboxCheckedAnimation 1s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+
 }
+
 #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-element, #menu--toggle:checked + .menu--toggle__trigger ~ .menu__body .menu__body-link {
+
   display: block;
+
 }
+
+
+
 
 
 /* 「RightToLeft」を適用する箇所 */
+
 /*画面表示から0.5秒後に1秒かけながらアニメーションする指定。
+
 あと、forwardsでアニメーション終了後もプロパティが100%のときのものを保持するようにします。*/
+
 .slide1{
+
   animation: RightToLeft 1.2s ease 0.0s forwards;
+
 }
+
+
 
 .slide2{
+
   animation: RightToLeft 1.5s ease 0.0s forwards;
+
 }
+
+
 
 .slide3{
+
   animation: RightToLeft 2.0s ease 0.0s forwards;
+
 }
+
+
 
 .slide4{
+
   animation: RightToLeft 2.5s ease 0.0s forwards;
+
 }
+
+
 
 .slide5{
+
   animation: RightToLeft 3.0s ease 0.0s forwards;
+
 }
+
+
 
 .slide6{
+
   animation: RightToLeft 3.5s ease 0.0s forwards;
+
 }
+
+
 
 .slide7{
+
   animation: RightToLeft 4.0s ease 0.0s forwards;
+
 }
+
+
 
 .slide8{
+
   animation: RightToLeft 4.5s ease 0.0s forwards;
+
 }
+
+
 
 @keyframes checkboxCheckedAnimation {
+
   80% {
+
     width: 100vw;
+
     height: 100vh;
+
   }
+
   100% {
+
     width: 100vw;
+
     height: 100vh;
+
   }
+
 }
+
+
 
 @keyframes checkboxUncheckedAnimation {
+
   0% {
+
     width: 100vw;
+
     height: 100vh;
+
   }
+
 }
+
+
 
 /* 「RightToLeft」の動作内容 */
+
 @keyframes RightToLeft {
+
   0% {
+
     opacity: 0;/* 透明 */
+
   }
+
   10%{
+
     transform: translateX(20%);/* X軸方向に50px */
+
   }
+
   100% {
+
     opacity: 1;/* 不透明 */
+
     transform: translateX(0%);
+
     color: #ffffff;
+
   }
+
 }
 
+
+
 #pageHead .logo{
+
 	margin-top: 10px;
+
 	margin-left: 10px; 
+
 }
+
+
 
 /* ここからページごとのCSSを書く */
 
 
 
+
+
+
+
 /* Body */
+
+
 
 #pageBody{
 
@@ -195,7 +382,13 @@ body{
 
 
 
+
+
+
+
 /* ページタイトル */
+
+
 
 #pageBody .page-title .main{
 
@@ -203,9 +396,11 @@ body{
 
 	font-size: 70px;
 
-	color: #0174DF;
+	color: #4169e1;/*#0174DF;*/
 
 }
+
+
 
 #pageBody .page-title .sub{
 
@@ -221,15 +416,17 @@ body{
 
 }
 
+
+
 #pageBody .page-title hr{
 
 	height: 3px;
 
-	background-color: #0174DF;
+	background-color: #4169e1;/*#0174DF;*/
 
 	border: none;
 
-	color: #0174DF;
+	color: #4169e1;/*#0174DF;*/
 
 	margin-right: 10%;
 
@@ -243,7 +440,7 @@ body{
 
 #pageFoot{
 
-	border-top: 1px solid #1E90FF;
+	border-top: 1px solid #4169e1;/*#1E90FF;*/
 
 	padding: 10px;
 
@@ -259,15 +456,11 @@ body{
 
 	float: right;
 
-
-
 }
 
 
 
-
-
-/* ラジオボタン */
+/* ニュース */
 
 #pageBody .news {
 
@@ -303,6 +496,8 @@ body{
 
 }
 
+
+
 /* ボタンホバー 時*/
 
 #pageBody .news label:hover {
@@ -311,6 +506,8 @@ body{
 
 }
 
+
+
 /* チェック非表示 */
 
 #pageBody .news input {
@@ -318,6 +515,8 @@ body{
     display: none;
 
 }
+
+
 
 /* 中身非表示 */
 
@@ -329,7 +528,7 @@ body{
 
     overflow: hidden;
 
-    opacity: 0;
+	opacity: 0;
 
     transition: 0.8s;
 
@@ -365,7 +564,7 @@ body{
 
 #pageBody .news input[value="2018"]:checked + label {
 
-    background-color: #399DE2;
+    background-color: #4169e1;/*#399DE2;*/
 
 	color: #FFFFFF;
 
@@ -383,13 +582,21 @@ body{
 
 #pageBody .news input[value="2017"]:checked + label {
 
-    background-color: #399DE2;
+    background-color: #4169e1;/*#399DE2;*/
 
 	color: #FFFFFF;
 
 }
 
 
+
+/* 画像new */
+
+#image_new {
+
+	height: 17px;
+
+}
 
 
 
@@ -415,45 +622,91 @@ body{
 
 }
 
+
+
 /* 2018ニュースタイトル */
+
+
 
 #pageBody .news .hidden_show1 ul li time{
 
+
+
 	font-weight: bold;
+
+
 
 	display: block;
 
+
+
 	font-size: 17px;
+
+
 
 	line-height: 1.429;
 
+
+
 	margin-bottom: 3px;
 
+
+
 }
+
+
 
 /* 2018入れ子リスト */
 
+
+
 #pageBody .news .hidden_show1 ul li ul li{
+
+
 
 	padding: 0;
 
+
+
 	margin-left: 30px;
+
+
 
 	margin-top: 0px;
 
+
+
     margin-bottom: 0px;
+
+
 
 	/*margin: 0; */
 
+
+
 	list-style: none;
+
+
 
 	border-bottom:none;
 
+
+
 	font-size: 14px;
+
+
 
 	list-style-type: circle;
 
+
+
 }
+
+
+
+
+
+
 
 
 
@@ -461,65 +714,142 @@ body{
 
 /* 2017ニュースリスト */
 
+
+
 #pageBody .news .hidden_show2 ul li{
 
+
+
 	list-style: none;
+
+
 
 	/*border-bottom: 1px solid #1E90FF;*/
 
+
+
 	padding-bottom: 10px;
+
+
 
 	margin-bottom: 10px;
 
+
+
 	margin-right: 0px;
+
+
 
 	margin-left: 0px;
 
+
+
 	font-size: 14px;
+
+
 
 	line-height: 1.5;
 
+
+
 }
+
+
 
 /* 2017ニュースタイトル */
 
+
+
 #pageBody .news .hidden_show2 ul li time{
+
+
 
 	font-weight: bold;
 
+
+
 	display: block;
+
+
 
 	font-size: 17px;
 
+
+
 	line-height: 1.429;
+
+
 
 	margin-bottom: 3px;
 
+
+
 }
+
+
 
 /* 2017入れ子リスト */
 
+
+
 #pageBody .news .hidden_show2 ul li ul li{
+
+
 
 	padding: 0;
 
+
+
 	margin-left: 30px;
+
+
 
 	margin-top: 0px;
 
+
+
     margin-bottom: 0px;
+
+
 
 	/*margin: 0; */
 
+
+
 	list-style: none;
+
+
 
 	border-bottom:none;
 
+
+
 	font-size: 14px;
+
+
 
 	list-style-type: circle;
 
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
