@@ -183,7 +183,7 @@ body{
 #pageFoot{
 	border-top: 1px solid #4169e1;
 	padding: 10px;
-	margin-top: 15px;
+	margin-top: 30px;
 }
 
 /* 幅を960pxに */
@@ -223,7 +223,7 @@ body{
 /* 質問 */
 #pageBody h1{
   margin-top: 30px;
-  font-size: 20px;;
+  font-size: 24px;;
   padding-left: 0.5rem;
   border-left: solid 0.6rem #4169e1;
 }
@@ -254,4 +254,24 @@ body{
 
 #pageBody .merit{
   font-size: 20px;
+}
+
+/* リンク */
+a:hover{
+  color: #666666;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* チーム */
+#pageBody .teams ul li{
+  font-size: 20px;
+  color: #E49B0F;
+}
+
+#pageBody .teams ul{
+  list-style-type: circle;
 }

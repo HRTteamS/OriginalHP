@@ -191,6 +191,36 @@ body{
   max-width: 960px;
 }
 
+/* ページタイトル */
+#pageBody .page-title .main{
+	text-align: center;
+	font-size: 70px;
+	color: #4169e1;/*#0174DF;*/
+}
+
+#pageBody .page-title .sub{
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+#pageBody .page-title hr{
+	height: 3px;
+	background-color: #4169e1;/*#0174DF;*/
+	border: none;
+	color: #4169e1;/*#0174DF;*/
+}
+
+#pageBody .preface{
+	width: 95%;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 20px;
+  padding-top: 30px;
+}
+
 #pageBody h1{
   margin-top: 30px;
   font-size: 2rem;
@@ -246,7 +276,6 @@ a:hover{
   flex: 1;
   width: auto;
   height: 10rem;
-  margin-right: 300px;
 }
 
 /* 執筆著書 */
