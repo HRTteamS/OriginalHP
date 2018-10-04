@@ -179,18 +179,113 @@ body{
 }
 
 /* ここからページごとのCSSを書く */
+#pageBody{
 
-#pageBody .info{
+	width: 70%;
+
+	margin: 0 auto;
+
+}
+
+#pageBody .page-title .main{
+
 	text-align: center;
+
+	font-size: 70px;
+
+	color: #4169e1;/*#0174DF;*/
+
 }
 
-ul{
-	padding-left: 30px;
+#pageBody .page-title .sub{
+
+	text-align: center;
+
+	font-size: 20px;
+
+	color: #000000;
+
+	margin-top: -10px;
+
+	margin-bottom: 10px;
+
 }
 
-.explain{
-	font-weight: 500;
+#pageBody .page-title hr{
+
+	height: 3px;
+
+	background-color: #4169e1;/*#0174DF;*/
+
+	border: none;
+
+	color: #4169e1;/*#0174DF;*/
+
+
 }
+
+#pageBody h1{
+  margin-top: 30px;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  border-left: solid 0.75rem #4169e1;
+}
+
+#pageBody h2{
+  font-size: 20px;
+}
+
+#pageBody p{
+	text-align:center
+}
+
+#pageBody ul li{
+
+	padding: 0;
+
+	margin-left: 30px;
+
+	margin-top: 0px;
+
+    margin-bottom: 0px;
+
+	/*margin: 0; */
+
+	list-style: none;
+
+	border-bottom:none;
+
+	font-size: 20px;
+
+	list-style-type: circle;
+
+}
+
+#pageBody ul2 li{
+
+	padding: 0;
+
+	margin-left: 30px;
+
+	margin-top: 0px;
+
+    margin-bottom: 0px;
+
+	/*margin: 0; */
+
+	list-style: none;
+
+	border-bottom:none;
+
+	font-size: 20px;
+
+	list-style-type: disc;
+	padding-left: 50px;
+	padding-right: 50px;
+
+}
+
+
 
 #pageFoot{
 	border-top: 1px solid #1E90FF;
