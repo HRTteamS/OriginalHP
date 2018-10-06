@@ -228,7 +228,7 @@ body{
 
 .section-content .access{
   position: relative;
-  top: -70vh;
+  top: -75vh;
   left: 47vw;
   width: 40vw;
   height: 80vh;
@@ -246,14 +246,13 @@ body{
 .section-content .access .access-detail{
   position: relative;
   top: 5vh;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
   height: 68vh;
   overflow: hidden;
 }
 
 .section-content .about-nagao{
   position: relative;
-  top: 5vh;
   width: 85vw;
   height: 80vh;
   /*border: 1px solid  #4169e1;*/
